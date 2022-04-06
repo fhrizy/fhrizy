@@ -1,0 +1,106 @@
+@import "../../attribute.scss";
+
+.topbar {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    color: $darkBlue;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    transition: all 1s ease;
+
+    .wrapper{
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mobile5{
+            padding-left: 10px;
+            margin-top: 10px;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+            .logo{
+                font-size: 40px;
+                font-weight: 400;
+                text-decoration: none;
+                color: inherit;
+                margin-right: 40px;
+                @include mobile5{
+                    font-size: 20px;
+                    margin-right: 10px;
+                    font-weight: 500;
+                }
+            }
+    
+            .itemContainer{
+                display: flex;
+                align-items: center;
+                margin-left: 30px;
+
+                @include mobile5{
+                    margin-left: 5px;
+                }
+        
+                .icon{
+                    font-style: 18px;
+                    margin-right: 5px;
+                    @include mobile5{
+                        font-style: 15px;
+                    }
+                }
+                span{
+                    font-size: 15px;
+                    font-weight: 500;
+                    @include mobile5{
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+
+        .right{
+            .humburger{
+                width: 32px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+
+                span{
+                    width: 100%;
+                    height: 3px;
+                    background-color: $darkBlue;
+                    transform-origin: left;
+                    transition: 2s ease;
+                }
+            }
+        }
+    }
+
+    &.active{
+        background-color: $darkBlue;
+        color: white;
+
+        .humburger{
+            span{
+                &:first-child{
+                    background-color: white;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:last-child{
+                    background-color: white;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}

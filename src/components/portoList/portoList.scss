@@ -1,0 +1,20 @@
+@import "../../attribute.scss";
+
+.portoList{
+    font-size: 14px;
+    margin-right: 50px;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile5{
+        margin-right: 5px;
+    }
+
+    &.active{
+        background-color: $darkBlue;
+        color: white;
+    }
+}

@@ -1,0 +1,74 @@
+
+$width1: 1280px;
+@mixin mobile1 {
+    @media (max-width: #{$width1}){
+        @content
+    }
+}
+$width2: 1024px;
+@mixin mobile2 {
+    @media (max-width: #{$width2}){
+        @content
+    }
+}
+$width3: 768px;
+@mixin mobile3 {
+    @media (max-width: #{$width3}){
+        @content
+    }
+}
+$width4: 540px;
+@mixin mobile4 {
+    @media (max-width: #{$width4}){
+        @content
+    }
+}
+$width5: 411px;
+@mixin mobile5 {
+    @media (max-width: #{$width5}){
+        @content
+    }
+}
+$width6: 375px;
+@mixin mobile6 {
+    @media (max-width: #{$width6}){
+        @content
+    }
+}
+$width7: 320px;
+@mixin mobile7 {
+    @media (max-width: #{$width7}){
+        @content
+    }
+}
+$width8: 280px;
+@mixin mobile8 {
+    @media (max-width: #{$width8}){
+        @content
+    }
+}
+
+// blue palette
+$darkBlue: #2f455C;
+$blue: #7FE5FF;
+$gray: lightgray;
+$greenBlue: #21D0B3;
+
+// evening palette
+$greyGreen: #99B898;
+$ligthYellow: #FECEA8;
+$orange: #FF847C;
+$red: #E84A5F;
+$blackMate: #2A363B;
+
+// aqua palette
+$lemon: #E5FCC2;
+$blackGreen: #594f4f;
+$lightGreen: #9DE0AD;
+$aquaBlue: #45ADA8;
+$greyBlue: #547980;
+
+// button color
+$safeButton: #21D0B3;
+$riskButton: #FF6559;
+$warningButton: #FFDF80;

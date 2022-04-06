@@ -1,0 +1,138 @@
+@import "../../attribute.scss";
+
+.certification{
+    background-color: $lightGreen;
+    display: flex;
+    color: $darkBlue;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    h1{
+        font-size: 50px;
+        font-weight: 300;
+        margin-bottom: 700px;
+        color: $darkBlue;
+        @include mobile5{
+            margin-bottom: 500px;
+        }
+    }
+
+    .terus{
+        height: 200px;
+        bottom: 350px;
+        position: absolute;
+        cursor: pointer;
+        @include mobile5{
+            height: 100px;
+            bottom: 100px;
+        }
+
+        &.kiri{
+            left: 100px;
+            transform: rotate(180deg);
+            @include mobile5{
+                left: 0px;
+            }
+        }
+
+        &.kanan{
+            right: 100px;
+            @include mobile5{
+                right: 0px;
+            }
+        }
+    }
+
+    .slider{
+        height: 480px;
+        display: flex;
+        position: absolute;
+        left: 0vw;
+        transition: all 1s ease-out;
+        @include mobile5{
+            height: 280px;
+        }
+
+        .container{
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include mobile5{
+                width: 95vw;
+                margin: 10px;
+            }
+
+            .item{
+                width: 700px;
+                height: 100%;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .left{
+                    flex: 4;
+                    height: 80%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    .leftContainer{
+                        width: 90%;
+                        height: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .imgContainer{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-color: $lightGreen;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            img{
+                                width: 25px;
+                            }
+                        }
+
+                        h2{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 13px;
+                        }
+                        span{
+                            font-size: 12px;
+                            font-weight: 600;
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .right{
+                    flex: 4;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    scrollbar-width: none; //for firefox
+                    &::-webkit-scrollbar{
+                         display: none;
+                     }
+
+                    img{
+                        width: 400px;
+                    }
+                }
+            }
+        }
+    }
+    
+}

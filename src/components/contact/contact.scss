@@ -1,0 +1,89 @@
+@import "../../attribute.scss";
+
+.contact{
+    background-color: $ligthYellow;
+    display: flex;
+    @include mobile5{
+        flex-direction: column;
+    }
+    .left{
+        flex: 1;
+        overflow: hidden;
+
+        img{
+            height: 100%;
+            float: right;
+            @include mobile5{
+                float: none;
+                height: 105%;
+            }
+        }
+    }
+
+    .right{
+        flex: 1;
+        display: flex;
+        margin-top: 170px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include mobile5{
+            margin-top: 0;
+        }
+
+        h2{
+            font-size: 30px;
+            font-weight: 300;
+            margin: 20px;
+            @include mobile5{
+                height: 50px;
+                margin: 0;
+            }
+        }
+
+        form{
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include mobile5{
+                width: 100%;
+                height: 100%;
+            }
+
+            input{
+                width: 300px;
+                height: 30px;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            textarea{
+                width: 300px;
+                height: 200px;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            button{
+                width: 150px;
+                height: 30px;
+                color: white;
+                background-color: $red;
+                border-radius: 10px;
+                font-weight: 500;
+                cursor: pointer;
+                margin-bottom: 10px;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            span{
+                color: $safeButton;
+            }
+        }
+    }
+}
