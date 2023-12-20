@@ -1,8 +1,9 @@
 - 👋 Hi, I’m @fhrizy
-- 👀 I’m interested in Android Studio, ReactJS & NodeJS framework, along with API and Firebase database. I have 1 year experience in making car parking system applications and campus magazine applications using Android Studio. Recently, I also created a web profile and also a chat engine web application using ReactJS. I also have a good understanding of HTML, CSS and JS programming languages.
-- 🌱 I’m currently learning ReactJS, NextJS & Flluter programming
+- 👀 I'm an experienced MERN (MongoDB, Express.js, React.js, Node.js) developer with two years in web development. Recently, I added Ionic React to my skills, diving into cross-platform mobile app development. From building dynamic interfaces with React.js to managing data with MongoDB, my MERN expertise is solid. I also use Tailwind CSS for efficient styling, ensuring clean and modern designs.
+I've embraced Next.js to boost web app performance, incorporating React components on the server side for faster loading and better user experiences. I'm excited about applying my diverse skills to innovative projects, delivering user-friendly solutions that blend MERN, Ionic React, Tailwind CSS, and Next.js.
+- 🌱 I’m currently learning React Native.
 - 💞️ I’m looking to collaborate on you guys.
-- 📫 How to reach me on instagram @fhrizy and my linkedIn www.linkedin.com/in/ficharrozy
+- 📫 How to reach me on instagram @fhrizy and my linkedIn [www.linkedin.com/in/ficharrozy](https://www.linkedin.com/in/fichar-rozy/)
 
 <!---
 fhrizy/fhrizy is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
